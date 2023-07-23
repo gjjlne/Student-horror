@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 div.game{
     border: 1px solid black;
     width: 80%;
@@ -29,6 +33,20 @@ div.game{
 
 .pulo{
     animation: pulo 800ms ease-out ;
+}
+
+.score{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: x-large;
+}
+
+.bnt{
+    padding: 7px;
+    margin-top: 10px;
+    position: absolute;
+    left: 35vh;
 }
 
 @keyframes livro-animacao{
