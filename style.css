@@ -9,12 +9,18 @@ body{
 }
 
 div.game{
-    border: 1px solid black;
-    width: 80%;
-    height: 500px;
+    width: 100%;
+    height: 55vh;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background-image: linear-gradient( blue,  white);
+}
+
+.chao{
+    background:url(imagem/cenario01.jpg) no-repeat;
+    background-size: cover;
+    height: 45vh;
 }
 
 .livro{
@@ -24,8 +30,18 @@ div.game{
     animation: livro-animacao 1.5s infinite linear;
 }
 
+.sol{
+    width: 200px;
+}
+
+.nuvem{
+    position: absolute;
+    width: 350px;
+    animation: nuvem 10s infinite linear;
+}
+
 .nailson{
-    width: 100px;
+    width: 80px;
     position: absolute;
     bottom: 0px;
     left: 40px;
@@ -43,8 +59,10 @@ div.game{
 }
 
 .bnt{
-    padding: 7px;
-    margin-top: 10px;
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 200px;
     position: absolute;
     left: 35vh;
 }
@@ -65,22 +83,32 @@ div.game{
     }
 
     30%{
-        bottom: 120px;
+        bottom: 100px;
     }
 
     50%{
-        bottom: 125px;
+        bottom: 105px;
     }
 
     50%{
-    bottom: 125px;
+    bottom: 105px;
     }
 
     60%{
-       bottom: 125px;
+       bottom: 100px;
     }
 
     100%{
     bottom: 0;
+    }
+}
+
+@keyframes nuvem{
+    from{
+        right: -350px;
+    }
+
+    to{
+        right: 100%;
     }
 }
