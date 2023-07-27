@@ -19,10 +19,9 @@ div.game{
 }
 
 .caixa-game{
-    width: 500px;
-    height: 100vh;
+    max-width: 600px;
+    max-height: 80vh;
     margin: auto;
-    box-shadow: 5px 1px 10px black;
 }
 
 .chao{

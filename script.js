@@ -17,7 +17,7 @@ const jump = () => {
         nailson.classList.remove('pulo');
         aljump = false;
 
-    }, 1100)
+    }, 800)
 }
 
 const pulo = () => {
@@ -29,7 +29,7 @@ const pulo = () => {
         nailson.classList.remove('pulo');
         aljump = false;
 
-    }, 1500)
+    }, 800)
 }
 const loop = setInterval(() => {
 
