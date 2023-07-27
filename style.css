@@ -19,7 +19,7 @@ div.game{
 }
 
 .caixa-game{
-    max-width: 600px;
+    max-width: 700px;
     max-height: 80vh;
     margin: auto;
 }
@@ -66,12 +66,16 @@ div.game{
 }
 
 .restart{
+    font-weight: bolder;
     background-color: yellow;
     border-radius: 20px;
     padding: 20px;
+    width: 100px;
 }
 
 .pular{
+    width: 100px;
+    height: 80px;
     position: absolute;
     left: 360px;
     bottom: 80px;
@@ -82,12 +86,12 @@ div.game{
 
 .score-final{
     font-weight: bolder;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .s{
     font-weight: bolder;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .gameover{
@@ -98,8 +102,8 @@ div.game{
     border: 1px solid black;
     top: 110px;
     left: 150px;
-    width: 200px;
-    height: 220px;
+    min-width: 300px;
+    min-height: 220px;
     background-color: rgba(128, 128, 128, 0.548);
     border-radius: 20px;
     z-index: 1;
