@@ -2,6 +2,7 @@ const score = document.querySelector('.score')
 const nailson = document.querySelector('.nailson')
 const livro = document.querySelector('.livro')
 const nuvem = document.querySelector('.nuvem')
+const menu = document.querySelector('.gameover')
 let aljump = false;
 let count = 0
 
@@ -23,17 +24,18 @@ const loop = setInterval(() => {
     const posicaonuvem = nuvem.offsetLeft;
     const posicaonailson = +window.getComputedStyle(nailson).bottom.replace('px', '');
 
-    if (posicaolivro <= 105 && posicaolivro > 0 && posicaonailson < 80 && !aljump) {
-        //alert(`Game over! Seu score foi: ${count}`);//
+    if(posicaolivro <= 105 && posicaolivro > 0 && posicaonailson < 80){
 
-       livro.style.animation = 'none'
+        livro.style.animation = 'none'
        livro.style.left = `${posicaolivro}px`;
  
        nailson.style.animation = 'none'
        nailson.style.bottom = `${posicaonailson}px`;
 
        nuvem.style.animation = 'none'
-       nuvem.style.left = `${posicaolivro}px`;
+       nuvem.style.left = `${posicaonuvem}px`;
+
+       menu.style.display = "flex"
 
        clearInterval(loop);
     }
@@ -43,3 +45,15 @@ const loop = setInterval(() => {
 }, 10)
 
 document.addEventListener('keydown', jump);
+
+document.addEventListener("click", () => {
+    menu.style.display = "none"
+
+    livro.style.animation = 'livro-animacao 1.5s infinite linear'
+ 
+    nailson.style.animation = 'none'
+    nailson.style.bottom = `${posicaonailson}px`;
+
+    nuvem.style.animation = 'none'
+    nuvem.style.left = `${posicaonuvem}px`;
+})
