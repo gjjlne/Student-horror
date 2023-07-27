@@ -72,6 +72,15 @@ div.game{
     padding: 20px;
 }
 
+.pular{
+    position: absolute;
+    left: 360px;
+    bottom: 80px;
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 20px;
+}
+
 .score-final{
     font-weight: bolder;
     margin-bottom: 80px;

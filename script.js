@@ -1,4 +1,5 @@
 const score = document.querySelector('.score')
+const pular = document.querySelector('.pular')
 const nailson = document.querySelector('.nailson')
 const livro = document.querySelector('.livro')
 const nuvem = document.querySelector('.nuvem')
@@ -19,6 +20,17 @@ const jump = () => {
     }, 1100)
 }
 
+const pulo = () => {
+    nailson.classList.add('pulo');
+    aljump = true;
+
+    setTimeout(() => {
+
+        nailson.classList.remove('pulo');
+        aljump = false;
+
+    }, 1500)
+}
 const loop = setInterval(() => {
 
     const posicaolivro = livro.offsetLeft;
@@ -43,7 +55,7 @@ const loop = setInterval(() => {
 
     count++;
     score.innerHTML = `SCORE: ${count}`;
-    scorefinal.innerHTML = count
+    scorefinal.innerHTML = count 
 }, 10)
 
 document.addEventListener('keydown', jump);
@@ -51,3 +63,5 @@ document.addEventListener('keydown', jump);
 document.addEventListener("click", () => {
     menu.style.display = "none"
 })
+
+document.addEventListener("click", pulo)
