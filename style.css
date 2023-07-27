@@ -72,13 +72,14 @@ div.game{
     padding: 20px;
 }
 
-.comecar{
-    background-color: yellow;
-    border-radius: 20px;
-    padding: 20px;
-    position: absolute;
-    left: 15vh;
-    margin-top: 200px;
+.score-final{
+    font-weight: bolder;
+    margin-bottom: 80px;
+}
+
+.s{
+    font-weight: bolder;
+    margin-bottom: 80px;
 }
 
 .gameover{
@@ -98,7 +99,7 @@ div.game{
 
 .gameover > p{
     font-weight: bolder;
-    margin-bottom: 95px;
+    margin-bottom: 5px;
     margin-top: 20px;
 }
 
