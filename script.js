@@ -18,7 +18,7 @@ const jump = () => {
         aljump = false;
 
     }, 800)
-}
+}  
 
 const pulo = () => {
     nailson.classList.add('pulo');

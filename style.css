@@ -34,7 +34,8 @@ div.game{
     width: 80px;
     position: absolute;
     bottom: 0;
-    animation: livro-animacao 1.5s infinite linear;
+    animation: livro-animacao infinite linear;
+    animation-duration: 1500ms;
 }
 
 .sol{
@@ -60,9 +61,10 @@ div.game{
 
 .score{
     position: absolute;
-    top: 30px;
+    top: 200px;
     left: 10px;
     font-size: x-large;
+    font-weight: bolder;
 }
 
 .restart{
